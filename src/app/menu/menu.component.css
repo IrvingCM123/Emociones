@@ -54,6 +54,55 @@
 
 }
 
+@media only screen and (max-width: 799px) and (min-width: 601px) {
+  .nombre_logo .nombre {
+    font-size: 120%;
+    padding: 10% 5%;
+  }
+
+  .nombre_logo {
+    padding: 0 0 0 5%;
+    width: 50%;
+  }
+
+  .rutas_navegacion {
+    font-size: 110%;
+    padding: 7% 0;
+    width: 45%;
+  }
+
+  .logo{
+    width: 140%;
+    height: 10%;
+  }
+
+}
+
+@media only screen and (max-width: 999px) and (min-width: 800px) {
+  .nombre_logo .nombre {
+    font-size: 120%;
+    padding: 3% 5%;
+  }
+
+  .nombre_logo {
+    padding: 0 0 0 5%;
+    width: 50%;
+  }
+
+  .rutas_navegacion {
+    font-size: 110%;
+    padding: 1.5% 0;
+    width: 45%;
+  }
+
+  .logo{
+    width: 80%;
+    padding: 0.4% 0;
+    height: 11%;
+  }
+
+}
+
 @media only screen and (max-width: 499px) and (min-width: 300px) {
   .nombre_logo .nombre {
     font-size: 90%;
@@ -81,7 +130,7 @@
 
 @media only screen and (max-width: 1200px) and (min-width: 1001px){
   .rutas_navegacion {
-    padding: 3% 0;
+    padding: 2% 0;
     width: 65%;
     font-size: 180%;
   }
@@ -92,7 +141,7 @@
 
   .nombre_logo .nombre {
     font-size: 180%;
-    padding: 3% 5%;
+    padding: 4% 5%;
   }
 
   .logo {
