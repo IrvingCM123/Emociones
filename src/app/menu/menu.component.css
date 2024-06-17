@@ -81,7 +81,7 @@
 @media only screen and (max-width: 999px) and (min-width: 800px) {
   .nombre_logo .nombre {
     font-size: 120%;
-    padding: 3% 5%;
+    padding: 5% 5%;
   }
 
   .nombre_logo {
@@ -91,14 +91,14 @@
 
   .rutas_navegacion {
     font-size: 110%;
-    padding: 1.5% 0;
+    padding: 2.6% 0;
     width: 45%;
   }
 
   .logo{
     width: 80%;
     padding: 0.4% 0;
-    height: 11%;
+    height: 17%;
   }
 
 }
