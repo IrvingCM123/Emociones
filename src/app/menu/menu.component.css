@@ -4,6 +4,9 @@
   background-color: #0a5755;
   height: fit-content;
   height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .nombre_logo {
@@ -76,7 +79,7 @@
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1500px) and (min-width: 1001px){
   .rutas_navegacion {
     padding: 2% 0;
     width: 65%;
@@ -88,7 +91,7 @@
 
   .nombre_logo .nombre {
     font-size: 160%;
-    padding: 3% 5%;
+    padding: 2% 5%;
   }
 
 }
@@ -131,7 +134,7 @@
 
 @media only screen and (min-width: 1000px) {
   .rutas_navegacion {
-    padding: 1.7% 0;
+    padding: 1.5% 0;
     width: 65%;
     font-size: 120%;
   }
@@ -142,7 +145,7 @@
 
   .nombre_logo .nombre {
     font-size: 140%;
-    padding: 3% 5%;
+    padding: 2.4% 5%;
   }
 }
 
