@@ -7,9 +7,37 @@ body {
   flex-direction: column;
 }
 
-.menu_navegacion {
-  height: 10%;
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+  .menu_navegacion {
+    height: 14%;
+  }
 }
+
+@media only screen and (min-width: 401px) and (max-width: 599px) {
+  .menu_navegacion {
+    height: 10%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .menu_navegacion {
+    height: 10%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 999px) {
+  .menu_navegacion {
+    height: 12%;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .menu_navegacion {
+    height: 10%;
+  }
+}
+
+
 
 .contenido {
   display: flex;

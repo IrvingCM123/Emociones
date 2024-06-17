@@ -56,8 +56,8 @@
 
 @media only screen and (max-width: 499px) and (min-width: 300px) {
   .nombre_logo .nombre {
-    font-size: 100%;
-    padding: 10% 3%;
+    font-size: 90%;
+    padding: 13% 5%;
   }
 
   .nombre_logo {
@@ -66,8 +66,8 @@
   }
 
   .rutas_navegacion {
-    font-size: 100%;
-    padding: 7% 2% 0 0;
+    font-size: 80%;
+    padding: 9% 2% 0 0;
     width: 50%;
   }
 
@@ -79,19 +79,74 @@
 
 }
 
-@media only screen and (max-width: 1500px) and (min-width: 1001px){
+@media only screen and (max-width: 1200px) and (min-width: 1001px){
   .rutas_navegacion {
-    padding: 2% 0;
+    padding: 3% 0;
     width: 65%;
+    font-size: 180%;
   }
 
   .rutas_navegacion a {
-    padding: 4% 0;
+    padding: 5% 0;
   }
 
   .nombre_logo .nombre {
-    font-size: 160%;
-    padding: 2% 5%;
+    font-size: 180%;
+    padding: 3% 5%;
+  }
+
+  .logo {
+    width: 40%;
+    height: 13%;
+    padding: 0.4% 0;
+  }
+
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1201px){
+  .rutas_navegacion {
+    padding: 2.3% 0;
+    width: 65%;
+    font-size: 140%;
+  }
+
+  .rutas_navegacion a {
+    padding: 5% 0;
+  }
+
+  .nombre_logo .nombre {
+    font-size: 150%;
+    padding: 4% 5%;
+  }
+
+  .logo {
+    width: 40%;
+    height: 13%;
+    padding: 0.4% 0;
+  }
+
+}
+
+@media only screen and (max-width: 1450px) and (min-width: 1301px){
+  .rutas_navegacion {
+    padding: 3% 0;
+    width: 65%;
+    font-size: 180%;
+  }
+
+  .rutas_navegacion a {
+    padding: 5% 0;
+  }
+
+  .nombre_logo .nombre {
+    font-size: 170%;
+    padding: 5% 5%;
+  }
+
+  .logo {
+    width: 40%;
+    height: 13%;
+    padding: 0.4% 0;
   }
 
 }
@@ -132,22 +187,6 @@
 }
 
 
-@media only screen and (min-width: 1000px) {
-  .rutas_navegacion {
-    padding: 1.5% 0;
-    width: 65%;
-    font-size: 120%;
-  }
-
-  .rutas_navegacion a {
-    padding: 3% 0;
-  }
-
-  .nombre_logo .nombre {
-    font-size: 140%;
-    padding: 2.4% 5%;
-  }
-}
 
 .rutas_navegacion {
   display: flex;
