@@ -1,0 +1,189 @@
+.navegador {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0a5755;
+  height: fit-content;
+  height: 100%;
+}
+
+.nombre_logo {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 0 5%;
+}
+
+.logo {
+  width: 40%;
+  height: 10%;
+}
+
+.nombre_logo .nombre {
+  color: white;
+  font-size: 130%;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  padding: 4% 5%;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 500px) {
+  .nombre_logo .nombre {
+    font-size: 120%;
+    padding: 10% 5%;
+  }
+
+  .nombre_logo {
+    padding: 0 0 0 5%;
+    width: 50%;
+  }
+
+  .rutas_navegacion {
+    font-size: 110%;
+    padding: 7% 0;
+    width: 45%;
+  }
+
+  .logo{
+    width: 140%;
+    height: 10%;
+  }
+
+}
+
+@media only screen and (max-width: 499px) and (min-width: 300px) {
+  .nombre_logo .nombre {
+    font-size: 100%;
+    padding: 10% 3%;
+  }
+
+  .nombre_logo {
+    padding: 0 0 0 2%;
+    width: 50%;
+  }
+
+  .rutas_navegacion {
+    font-size: 100%;
+    padding: 7% 2% 0 0;
+    width: 50%;
+  }
+
+  .logo{
+    width: 100%;
+    height: 10%;
+
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .rutas_navegacion {
+    padding: 2% 0;
+    width: 65%;
+  }
+
+  .rutas_navegacion a {
+    padding: 4% 0;
+  }
+
+  .nombre_logo .nombre {
+    font-size: 160%;
+    padding: 3% 5%;
+  }
+
+}
+
+.rutas_navegacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  margin: auto;
+}
+
+.rutas_navegacion a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 100%;
+}
+
+.rutas_navegacion a:hover {
+  color: black;
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .rutas_navegacion {
+    padding: 1.7% 0;
+    width: 65%;
+    font-size: 120%;
+  }
+
+  .rutas_navegacion a {
+    padding: 3% 0;
+  }
+
+  .nombre_logo .nombre {
+    font-size: 140%;
+    padding: 3% 5%;
+  }
+}
+
+.rutas_navegacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  margin: auto;
+}
+
+.rutas_navegacion a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 100%;
+}
+
+.rutas_navegacion a:hover {
+  color: black;
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+}
+

@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 99vw;
+  height: 97.9vh;
+}

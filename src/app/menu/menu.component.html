@@ -1,0 +1,16 @@
+<nav class="navegador">
+  <section class="nombre_logo">
+    <img src="../../assets/img/Icono.png" alt="Logo" class="logo">
+
+    <h1 class="nombre"> Competencias Emocionales </h1>
+  </section>
+
+  <section class="rutas_navegacion">
+
+    <a [routerLink]="['/inicio']" routerLinkActive="active" [ngClass]="{'underline': isInicioRouteActive()}"> Inicio </a>
+    <a [routerLink]="['/lista-actual']" routerLinkActive="active" [ngClass]="{'underline': isListaRouteActive()}"> Tema 1 </a>
+    <a [routerLink]="['/lista-actual']" routerLinkActive="active" [ngClass]="{'underline': isListaRouteActive()}"> Tema 2</a>
+
+  </section>
+
+</nav>
