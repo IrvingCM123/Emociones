@@ -138,7 +138,7 @@ export class DataService {
     {
       Titulo: "¿De qué manera las competencias se desarrollan en las practicas emocionales?",
       Descripcion: "Desarrollar competencias emocionales a través de prácticas emocionales implica implementar estrategias y actividades específicas que ayuden a los individuos a mejorar su comprensión y manejo de las emociones. Aquí se detallan cómo se pueden desarrollar cada una de las competencias emocionales mencionadas por Rafael Bisquerra a través de prácticas concretas:",
-      Imagen: "/assets/img/IMG-20240616-WA0115",
+      Imagen: "/assets/img/IMG-20240616-WA0115.jpg",
       Conclusion: "Estas prácticas emocionales, cuando se implementan de manera regular y sistemática, pueden ayudar a desarrollar competencias emocionales robustas que contribuyen al bienestar integral y al éxito personal y profesional.",
       Subtemas: [
         "Conciencia emocional",

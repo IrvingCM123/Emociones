@@ -1,16 +1,25 @@
-<nav class="navegador">
-  <section class="nombre_logo">
-    <img src="../../assets/img/Icono.png" alt="Logo" class="logo">
-
-    <h1 class="nombre"> Competencias Emocionales </h1>
-  </section>
-
-  <section class="rutas_navegacion">
-
-    <a [routerLink]="['/home']" routerLinkActive="active" [ngClass]="{'underline': isInicioRouteActive()}"> Inicio </a>
-    <a [routerLink]="['/Tema1']" routerLinkActive="active" [ngClass]="{'underline': isTema1RouteActive()}"> Competencias </a>
-    <a [routerLink]="['/Tema2']" routerLinkActive="active" [ngClass]="{'underline': isTema2RouteActive()}"> Prácticas </a>
-
-  </section>
-
+<nav class="navbar">
+  <div class="navbar-toggler-wrapper">
+    <button>
+      <input (click)="toggleNavbar()" id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+      <label for="abrir-cerrar" class="toggle-button"></label>
+    </button>
+  </div>
 </nav>
+
+<div class="sidebar" [ngClass]="{'active': isSidebarOpen}">
+  <ul>
+    <li><a class="subtitulo" href="#">Bisquerra</a></li>
+    <li><a href="#">Conciencia Emocional</a></li>
+    <li><a href="#">Regulación Emocional</a></li>
+    <li><a href="#">Autonomía Emocional</a></li>
+    <li><a href="#">Competencia Social</a></li>
+    <li><a href="#">Habilidades para la Vida y el Bienestar</a></li>
+    <li><a  class="subtitulo" href="#">Prácticas Concretas:</a></li>
+    <li><a href="#">Conciencia Emocional</a></li>
+    <li><a href="#">Regulación Emocional</a></li>
+    <li><a href="#">Autonomía Emocional</a></li>
+    <li><a href="#">Competencia Social</a></li>
+    <li><a href="#">Habilidades para la Vida y el Bienestar</a></li>
+  </ul>
+</div>

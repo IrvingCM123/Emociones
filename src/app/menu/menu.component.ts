@@ -13,7 +13,11 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  isSidebarOpen = false;
 
+  toggleNavbar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
+  }
   isInicioRouteActive() {
     return this.router.url === '/home';
   }
@@ -25,5 +29,6 @@ export class MenuComponent implements OnInit {
   isTema2RouteActive() {
     return this.router.url === '/Tema2';
   }
+  
 
 }

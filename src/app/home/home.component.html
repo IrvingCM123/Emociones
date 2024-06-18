@@ -33,3 +33,23 @@
   </section>
 
   <section class="contenido2">
+    <img src= {{data[1].Imagen}} alt="imagentema">
+
+    <div class="Texto">
+      <div class="Texto_Titulo">
+        {{data[1].Titulo}}
+      </div>
+      <div class="Texto_Texto">
+        {{data[1].Descripcion}}
+      </div>
+      <div class="Texto_Subtema">
+        <select name="" id=""  (input)="actualizarMarca($event)" required>
+          <option value="" disabled selected>Seleccione un tema</option>
+
+          <option value="tema1">Conoce más</option>
+          <option *ngFor="let tema of data[1].Subtemas" [value]="tema"> {{tema}} </option>
+        </select>
+      </div>
+    </div>
+
+    </section>
