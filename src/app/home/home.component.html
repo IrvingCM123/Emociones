@@ -1,12 +1,35 @@
-<article>
+<article class="Contenedor">
 
-  <section>
-    
+  <section class="titulo">
+
+    <img src="../../assets/img/Icono.png" alt="Logo" class="logo">
+
+    <h1>
+      Competencias Emocionales
+    </h1>
+
   </section>
 
-  <section>
+  <section class="contenido1">
+    <img src= {{data[0].Imagen}} alt="imagentema">
 
+    <div class="Texto">
+      <div class="Texto_Titulo">
+        {{data[0].Titulo}}
+      </div>
+      <div class="Texto_Texto">
+        {{data[0].Descripcion}}
+      </div>
+      <div class="Texto_Subtema">
+        <select name="" id=""  (input)="actualizarMarca($event)" required>
+          <option value="" disabled selected>Seleccione un tema</option>
+
+          <option value="tema1">Conoce más</option>
+          <option *ngFor="let tema of data[0].Subtemas" [value]="tema"> {{tema}} </option>
+        </select>
+      </div>
+    </div>
 
   </section>
 
-</article>
+  <section class="contenido2">
