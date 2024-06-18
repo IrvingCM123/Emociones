@@ -15,11 +15,11 @@ export class MenuComponent implements OnInit {
   }
 
   isInicioRouteActive() {
-    return this.router.url === '/inicio';
+    return this.router.url === '/home';
   }
 
   isListaRouteActive() {
-    return this.router.url === '/lista-actual';
+    return this.router.url === '/tema1';
   }
 
 }

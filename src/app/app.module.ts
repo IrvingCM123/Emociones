@@ -12,7 +12,7 @@ import { Tema1Component } from './tema1/tema1.component';
     AppComponent,
     MenuComponent,
     HomeComponent,
-    Tema1Component
+    Tema1Component,
   ],
   imports: [
     BrowserModule,
