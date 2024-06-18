@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
-  private TemaA1 =
+  private TemaA =
     {
       Titulo: "Bisquerra",
       Descripcion: "Rafael Bisquerra, un destacado experto en educación emocional, ha desarrollado un modelo de competencias emocionales que es ampliamente reconocido y utilizado en el ámbito educativo. Según Bisquerra, las competencias emocionales se dividen en cinco grandes bloques:",
@@ -127,27 +127,152 @@ export class DataService {
 
   ]
 
-  private Tema2 =
-  {
-    Titulo: "¿De qué manera las competencias se desarrollan en las practicas emocionales?",
-    Descripcion: "Desarrollar competencias emocionales a través de prácticas emocionales implica implementar estrategias y actividades específicas que ayuden a los individuos a mejorar su comprensión y manejo de las emociones. Aquí se detallan cómo se pueden desarrollar cada una de las competencias emocionales mencionadas por Rafael Bisquerra a través de prácticas concretas:",
-    Imagen: "src/assets/img/IMG-20240616-WA0115"
-  }
+  private TemaB =
+    {
+      Titulo: "¿De qué manera las competencias se desarrollan en las practicas emocionales?",
+      Descripcion: "Desarrollar competencias emocionales a través de prácticas emocionales implica implementar estrategias y actividades específicas que ayuden a los individuos a mejorar su comprensión y manejo de las emociones. Aquí se detallan cómo se pueden desarrollar cada una de las competencias emocionales mencionadas por Rafael Bisquerra a través de prácticas concretas:",
+      Imagen: "src/assets/img/IMG-20240616-WA0115",
+      Conclusion: "Estas prácticas emocionales, cuando se implementan de manera regular y sistemática, pueden ayudar a desarrollar competencias emocionales robustas que contribuyen al bienestar integral y al éxito personal y profesional."
+    }
 
+  private SubtemaB1 = [
+    {
+      Titulo: "Conciencia Emocional",
+      Imagen: "src/assets/img/IMG-20240616-WA0117"
+    },
+    {
+      Titulo: "Conciencia de las propias emociones:",
+      Descripcion1: "Diarios emocionales: Llevar un diario donde se registren las emociones experimentadas a lo largo del día, sus causas y cómo se manejaron.",
+      Descripcion2: "Meditación de conciencia plena: Practicar mindfulness para aumentar la conciencia del momento presente y de las emociones que surgen en diferentes situaciones.",
+      Descripcion3: "Autorreporte emocional: Realizar autoevaluaciones periódicas sobre el estado emocional en diferentes momentos del día.",
+      Imagen: "src/assets/img/IMG-20240616-WA0118"
+    },
+    {
+      Titulo: "Conciencia de las emociones de los demás:",
+      Descripcion1: "Role-playing: Participar en juegos de rol que simulen diferentes situaciones sociales para practicar la identificación y respuesta a las emociones de los demás.",
+      Descripcion2: "Observación empática: Realizar ejercicios donde se observe a los demás y se intente identificar sus emociones basándose en expresiones faciales, lenguaje corporal y tono de voz.",
+      Descripcion3: "Debates y discusiones: Facilitar discusiones grupales sobre cómo diferentes situaciones pueden afectar emocionalmente a las personas y fomentar la comprensión y empatía.",
+      Imagen: "src/assets/img/IMG-20240616-WA0119"
+    }
+  ]
 
-  private homeData = ['Home Item 1', 'Home Item 2', 'Home Item 3'];
-  private aboutData = ['About Item 1', 'About Item 2', 'About Item 3'];
-  private contactData = ['Contact Item 1', 'Contact Item 2', 'Contact Item 3'];
+  private SubtemaB2 = [
+    {
+      Titulo: "Regulación Emocional",
+      Imagen: "src/assets/img/IMG-20240616-WA0120"
+    },
+    {
+      Titulo: "Gestión de las propias emociones:",
+      Descripcion1: "Técnicas de relajación: Enseñar y practicar técnicas como la respiración profunda, la meditación y la relajación muscular progresiva.",
+      Descripcion2: "Reestructuración cognitiva: Ayudar a los individuos a identificar y cambiar pensamientos negativos o irracionales que pueden intensificar las emociones negativas.",
+      Descripcion3: "Simulación de situaciones: Practicar cómo manejar emocionalmente diferentes situaciones a través de simulaciones y escenarios controlados.",
+      Imagen: "src/assets/img/IMG-20240616-WA0121"
+    },
+    {
+      Titulo: "Manejo del estrés:",
+      Descripcion1: "Ejercicio físico regular: Fomentar la práctica de ejercicio físico como una forma de reducir el estrés y mejorar el bienestar emocional.",
+      Descripcion2: "Tiempo de descanso y autocuidado: Establecer rutinas que incluyan tiempo para el descanso y actividades de autocuidado, como hobbies o tiempo con seres queridos.",
+      Descripcion3: "Técnicas de manejo del tiempo: Enseñar habilidades de organización y manejo del tiempo para reducir el estrés asociado con las responsabilidades y plazos.",
+      Imagen: "src/assets/img/IMG-20240616-WA0122"
+    }
+  ]
 
-  getData(route: string): string[] {
+  private SubtemaB3 = [
+    {
+      Titulo: "Autonomía Emocional",
+      Imagen: "src/assets/img/IMG-20240616-WA0123"
+    },
+    {
+      Titulo: "Autoestima:",
+      Descripcion1: "Talleres de autoconocimiento: Realizar talleres y actividades que fomenten la autoexploración y el reconocimiento de fortalezas y áreas de mejora.",
+      Descripcion2: "Refuerzo positivo: Fomentar el uso del refuerzo positivo tanto interno como externo, para promover una imagen positiva de uno mismo.",
+      Descripcion3: "Actividades de autoafirmación: Realizar ejercicios donde se practiquen afirmaciones positivas sobre uno mismo y sus capacidades.",
+      Imagen: "src/assets/img/IMG-20240616-WA0123"
+    },
+    {
+      Titulo: "Automotivación:",
+      Descripcion1: "Establecimiento de metas: Ayudar a los individuos a establecer y seguir objetivos personales y profesionales, desglosándolos en metas alcanzables.",
+      Descripcion2: "Diarios de gratitud: Mantener un diario donde se anoten cosas por las que se está agradecido, lo cual puede aumentar la motivación y la perspectiva positiva.",
+      Descripcion3: "Visualización de logros: Practicar la visualización de objetivos logrados y el impacto positivo de estos logros en la vida personal y profesional.",
+      Imagen: "src/assets/img/IMG-20240616-WA0124"
+    },
+    {
+      Titulo: "Resiliencia:",
+      Descripcion1: "Narración de historias de superación: Compartir y analizar historias de personas que han superado adversidades para inspirar y enseñar estrategias de resiliencia.",
+      Descripcion2: "Técnicas de afrontamiento: Enseñar y practicar técnicas específicas para enfrentar y superar desafíos, como el establecimiento de redes de apoyo y la búsqueda de soluciones creativas.",
+      Descripcion3: "Reflexión y aprendizaje: Facilitar sesiones de reflexión sobre experiencias difíciles y los aprendizajes obtenidos de ellas.",
+      Imagen: "src/assets/img/IMG-20240616-WA0125"
+    }
+  ]
+
+  private SubtemaB4 = [
+    {
+      Titulo: "Competencia Social",
+      Imagen: "src/assets/img/IMG-20240616-WA0109"
+    },
+    {
+      Titulo: "Habilidades sociales:",
+      Descripcion1: "Talleres de comunicación: Realizar talleres que enseñen habilidades de comunicación efectiva, incluyendo la escucha activa y la expresión asertiva",
+      Descripcion2: "Juegos de cooperación: Participar en actividades grupales y juegos que requieran cooperación y trabajo en equipo.",
+      Descripcion3: "Resolución de conflictos: Practicar técnicas de resolución de conflictos a través de simulaciones y role-playing.",
+      Imagen: "src/assets/img/IMG-20240616-WA0109"
+    },
+    {
+      Titulo: "Empatía:",
+      Descripcion1: "Dinámicas de perspectiva: Realizar actividades donde se deba asumir la perspectiva de otra persona para comprender mejor sus emociones y reacciones.",
+      Descripcion2: "Actividades de voluntariado: Involucrarse en actividades de voluntariado que fomenten el contacto con diversas realidades y la empatía hacia los demás.",
+      Descripcion3: "Historias y narrativas: Leer y discutir historias que exploren las emociones y experiencias de diferentes personajes.",
+      Imagen: "src/assets/img/IMG-20240616-WA0111"
+    }
+  ]
+
+  private SubtemaB5 = [
+    {
+      Titulo: "Habilidades para la vida y el bienestar",
+      Imagen: "src/assets/img/IMG-20240616-WA0113"
+    },
+    {
+      Titulo: "Adopción de hábitos saludables:",
+      Descripcion1: "Programas de bienestar: Implementar programas que incluyan actividades físicas, nutrición adecuada y prácticas de higiene del sueño",
+      Descripcion2: "Educación en salud: Realizar talleres y sesiones informativas sobre la importancia de los hábitos saludables para el bienestar emocional y físico.",
+      Descripcion3: "Rutinas saludables: Ayudar a establecer rutinas diarias que incluyan prácticas de autocuidado y bienestar.",
+      Imagen: "src/assets/img/IMG-20240616-WA0113"
+    },
+    {
+      Titulo: "Búsqueda de ayuda:",
+      Descripcion1: "Información y recursos: Proveer información sobre recursos de apoyo disponibles, como servicios de consejería, líneas de ayuda y grupos de apoyo.",
+      Descripcion2: "Entrenamiento en solicitud de ayuda: Practicar cómo pedir ayuda de manera efectiva a amigos, familiares o profesionales cuando se necesita.",
+      Descripcion3: "Redes de apoyo: Fomentar la creación y mantenimiento de redes de apoyo tanto dentro como fuera del entorno educativo o laboral.",
+      Imagen: "src/assets/img/IMG-20240616-WA0111"
+    }
+  ]
+
+  getData(route: string): any {
     switch (route) {
-      case 'about':
-        return this.aboutData;
-      case 'contact':
-        return this.contactData;
-      case 'home':
-      default:
-        return this.homeData;
+      case 'Tema1':
+        return this.TemaA;
+      case 'SubtemaA1':
+        return this.SubtemaA1;
+      case 'SubtemaA2':
+        return this.SubtemaA2;
+      case 'SubtemaA3':
+        return this.SubtemaA3;
+      case 'SubtemaA4':
+        return this.SubtemaA4;
+      case 'SubtemaA5':
+        return this.SubtemaA5;
+      case 'Tema2':
+        return this.TemaB;
+      case 'SubtemaB1':
+        return this.SubtemaB1;
+      case 'SubtemaB2':
+        return this.SubtemaB2;
+      case 'SubtemaB3':
+        return this.SubtemaB3;
+      case 'SubtemaB4':
+        return this.SubtemaB4;
+      case 'SubtemaB5':
+        return this.SubtemaB5;
     }
   }
 }

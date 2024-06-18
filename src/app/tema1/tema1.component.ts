@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../datos/datos.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-tema1',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tema1Component implements OnInit {
 
-  constructor() { }
+  data: any;
+
+  constructor(
+    private dataService: DataService,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
+    this.route.url.subscribe(url => {
+      const routePath = url[0] ? url[0].path : 'TemaA';
+      this.data = this.dataService.getData(routePath);
+    });
   }
 
 }

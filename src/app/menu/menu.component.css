@@ -92,7 +92,7 @@
   .rutas_navegacion {
     font-size: 110%;
     padding: 2.6% 0;
-    width: 45%;
+    width: 75%;
   }
 
   .logo{
@@ -130,18 +130,27 @@
 
 @media only screen and (max-width: 1200px) and (min-width: 1001px){
   .rutas_navegacion {
-    padding: 2% 0;
-    width: 65%;
-    font-size: 180%;
+    padding: 2.2% 0%;
+    width: 100%;
+    font-size: 150%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
   }
 
   .rutas_navegacion a {
-    padding: 5% 0;
+    padding: 5% 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:center;
+    background-color: transparent;
   }
 
   .nombre_logo .nombre {
     font-size: 180%;
-    padding: 4% 5%;
+    padding: 4% 0%;
   }
 
   .logo {
@@ -155,7 +164,7 @@
 @media only screen and (max-width: 1300px) and (min-width: 1201px){
   .rutas_navegacion {
     padding: 2.3% 0;
-    width: 65%;
+    width: 95%;
     font-size: 140%;
   }
 
@@ -179,21 +188,21 @@
 @media only screen and (max-width: 1450px) and (min-width: 1301px){
   .rutas_navegacion {
     padding: 3% 0;
-    width: 65%;
+    width: 100%;
     font-size: 180%;
   }
 
   .rutas_navegacion a {
-    padding: 5% 0;
+    padding: 5% 0%;
   }
 
   .nombre_logo .nombre {
     font-size: 170%;
-    padding: 5% 5%;
+    padding: 7% 5%;
   }
 
   .logo {
-    width: 40%;
+    width: 60%;
     height: 13%;
     padding: 0.4% 0;
   }
