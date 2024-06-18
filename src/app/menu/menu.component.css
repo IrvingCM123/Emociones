@@ -1,7 +1,7 @@
 .navegador {
   display: flex;
   justify-content: space-between;
-  background-color: #0a5755;
+  background-color: #fff;
   height: fit-content;
   height: 100%;
   width: 100%;
@@ -21,13 +21,18 @@
 }
 
 .nombre_logo .nombre {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 130%;
   font-weight: 500;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   padding: 4% 5%;
+}
+
+.nombre_logo .nombre:hover {
+  color: rgb(7, 0, 131);
+  cursor: unset;
 }
 
 @media only screen and (max-width: 600px) and (min-width: 500px) {
@@ -244,14 +249,14 @@
 }
 
 .rutas_navegacion a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-family: sans-serif;
   font-size: 100%;
 }
 
 .rutas_navegacion a:hover {
-  color: black;
+  color: rgb(7, 0, 131);
 }
 
 .underline {
@@ -281,14 +286,14 @@
 }
 
 .rutas_navegacion a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-family: sans-serif;
   font-size: 100%;
 }
 
 .rutas_navegacion a:hover {
-  color: black;
+  color: rgb(0, 0, 255);
 }
 
 .underline {

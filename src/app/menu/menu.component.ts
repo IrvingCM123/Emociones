@@ -18,8 +18,12 @@ export class MenuComponent implements OnInit {
     return this.router.url === '/home';
   }
 
-  isListaRouteActive() {
-    return this.router.url === '/tema1';
+  isTema1RouteActive() {
+    return this.router.url === '/Tema1';
+  }
+
+  isTema2RouteActive() {
+    return this.router.url === '/Tema2';
   }
 
 }
