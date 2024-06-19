@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
   background-color: #f8f9fa;
   width: 100%;
   height: max-content;
-  overflow-y: scroll;
+  overflow-y: auto;
   -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
