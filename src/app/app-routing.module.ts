@@ -6,7 +6,7 @@ import { Tema1Component } from './tema1/tema1.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'tema1', component: Tema1Component}
+  { path: 'Conciencia emocional', component: Tema1Component}
 ];
 
 @NgModule({

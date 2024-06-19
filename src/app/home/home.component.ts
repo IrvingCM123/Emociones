@@ -21,14 +21,15 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.url.subscribe(url => {
-      const routePath = url[0] ? url[0].path : 'home';
+      const routePath = url[0] ? url[0].path : 'Conciencia emocional';
       this.data = this.dataService.getData(routePath);
     });
   }
 
-  actualizarMarca(event: Event): void {
+  actualizarTema(event: Event): void {
     this.enlace = (event.target as HTMLInputElement).value;
     this.router.navigate([this.enlace]);
+    console.log(this.enlace);
   }
 
 }

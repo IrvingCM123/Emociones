@@ -3,10 +3,10 @@
 }
 .navbar {
   display: flex;
-  align-items: center; 
-  justify-content: flex-end; 
+  align-items: center;
+  justify-content: flex-end;
   padding: 10px 20px;
-  background-color: #fff; 
+  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 6vh;
   width: 100%;
@@ -15,7 +15,7 @@
 
 .navbar-toggler-wrapper {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   width: 100%;
 }
 
@@ -27,9 +27,16 @@
   max-width: 300px; /* Ancho máximo */
   height: 100%;
   padding: 20px;
-  background-color: rgba(5, 199, 189, 0.9);  
+  background-color: rgba(5, 199, 189, 0.9);
   transition: right 0.3s ease;
   color: white;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+display: none;  /* Safari and Chrome */
 }
 
 .sidebar.active {
@@ -40,7 +47,7 @@
   color: white;
   margin: 0;
   height: 25px;
-  
+
 }
 a{
   text-decoration: none;
@@ -58,7 +65,7 @@ color:#0E5353;
 
 
 
-input#abrir-cerrar { 
+input#abrir-cerrar {
   visibility:hidden;
   position: absolute;
   top: -9999px;
@@ -77,7 +84,7 @@ input#abrir-cerrar {
   position:absolute;
   display:block;
   content:" ";
-  width: calc(100% / 2);               
+  width: calc(100% / 2);
   box-sizing: border-box;
   left: calc(100% / 4);
   transition: all 0.2s ease-out;
@@ -103,7 +110,7 @@ input#abrir-cerrar:checked + .toggle-button:before, input#abrir-cerrar:checked +
 }
 
 input#abrir-cerrar:checked + .toggle-button:before {
-  transform: rotate(45deg); 
+  transform: rotate(45deg);
 }
 
 input#abrir-cerrar:checked + .toggle-button:after {
