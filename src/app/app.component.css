@@ -6,12 +6,12 @@ body {
   display: flex;
   flex-direction: column;
   color: #f8f9fa;
-  overflow-y: scroll;
+  overflow-y: auto;
   -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
 
-body::-webkit-scrollbar {
+main::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
 
@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (min-width: 800px) and (max-width: 999px) {
   .menu_navegacion {
-    height: 17%;
+    height: 10%;
   }
 }
 
@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
   background-color: #f8f9fa;
   width: 100%;
   height: max-content;
-  overflow-y: auto;
+  overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
