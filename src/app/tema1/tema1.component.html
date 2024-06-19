@@ -6,8 +6,8 @@
       <img src={{data[0].Imagen}} alt="">
     </section>
 
-    <section class="Tema_Titulo">
-      <h3> {{data[0].Titulo}} </h3>
+    <section class="Titulo_Tema">
+      <h3> {{data[0].Titulo}}</h3>
     </section>
   </main>
 
@@ -15,31 +15,33 @@
 
     <section class="Descripcion_Figura">
 
-      <div class="Descripcion_Figura_titulo">
-        {{data[1].Titulo}}
+      <div class="Descripcion_Figura_Info">
+        <div class="Descripcion_Figura_Info_Titulo">
+          {{data[1].Titulo}}
+        </div>
+
+        <div class="Descripcion_Figura_Info_Descripcion">
+          {{data[1].Descripcion1}}
+        </div>
       </div>
 
-      <div class="Descripcion_Figura_descripcion">
-        {{data[1].Descripcion1}}
-      </div>
-
-      <div>
-        <img src= {{data[1].Imagen}} alt="">
+      <div class="Descripcion_Figura_Imagen">
+        <img src={{data[1].Imagen}} alt="">
       </div>
 
     </section>
 
     <section class="Descripcion_Informacion">
 
-      <div class="Descripcion_Informacion_titulo1">
+      <div class="Descripcion_Informacion_1">
         {{data[1].Descripcion2}}
       </div>
 
-      <div class="Descripcion_Informacion_titulo2">
+      <div class="Descripcion_Informacion_2">
         {{data[1].Descripcion3}}
       </div>
 
-      <div class="Descripcion_Informacion_titulo3">
+      <div class="Descripcion_Informacion_3">
         {{data[1].Descripcion4}}
       </div>
 
@@ -47,40 +49,6 @@
 
   </main>
 
-  <main class="Descripcion2">
 
-    <section class="Descripcion_Figura">
-
-      <div class="Descripcion_Figura_titulo">
-        {{data[1].Titulo}}
-      </div>
-
-      <div class="Descripcion_Figura_descripcion">
-        {{data[1].Descripcion1}}
-      </div>
-
-      <div>
-        <img src= {{data[1].Imagen}} alt="">
-      </div>
-
-    </section>
-
-    <section class="Descripcion_Informacion">
-
-      <div class="Descripcion_Informacion_titulo1">
-        {{data[1].Descripcion2}}
-      </div>
-
-      <div class="Descripcion_Informacion_titulo2">
-        {{data[1].Descripcion3}}
-      </div>
-
-      <div class="Descripcion_Informacion_titulo3">
-        {{data[1].Descripcion4}}
-      </div>
-
-    </section>
-
-  </main>
 
 </article>
