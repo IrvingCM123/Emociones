@@ -6,6 +6,13 @@ body {
   display: flex;
   flex-direction: column;
   color: #f8f9fa;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.Contenedor::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1500px) {
