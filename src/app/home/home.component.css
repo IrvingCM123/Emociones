@@ -86,6 +86,13 @@
   color: #11a68f;
   font-weight: 420;
   margin: 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.Texto_Texto::-webkit-scrollbar {
+display: none;  /* Safari and Chrome */
 }
 
 .Texto_Subtema {
