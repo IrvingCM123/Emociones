@@ -1,0 +1,48 @@
+.Contenedor {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  grid-template-areas: "Tema" "Descripcion";
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.Tema {
+  grid-area: Tema;
+  display:grid;
+  grid-template-columns: 50% 50%;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+  height: 100%;
+  grid-template-areas: "Imagen_Tema" "Titulo_Tema";
+}
+
+.Imagen_Tema {
+  grid-area: Imagen_Tema;
+  width: 100%;
+  height: 100%;
+}
+
+.Titulo_Tema {
+  grid-area: Titulo_Tema;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+
+}
+
+.Descripcion {
+  grid-area: Descripcion;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid black;
+}
