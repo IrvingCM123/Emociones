@@ -11,7 +11,7 @@
   grid-template-areas:
     "titulo titulo"
     "contenido1 contenido2";
-    overflow-y: auto;
+    overflow-y: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
