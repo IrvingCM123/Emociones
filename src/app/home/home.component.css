@@ -827,7 +827,7 @@ display: none;  /* Safari and Chrome */
     height: 50%;
   }
 
-  .TextoTitulo {
+  .Texto_Titulo {
     font-size: 120%;
     min-height: 100%;
     min-width: 100%;
@@ -844,7 +844,7 @@ display: none;  /* Safari and Chrome */
     font-size: 100%;
     min-height: 98%;
     min-width: 90%;
-    padding: 2% 0 0 2%;
+    padding: 3% 0 0 2%;
   }
 
   .Texto_Subtema select {
