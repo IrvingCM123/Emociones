@@ -270,7 +270,7 @@
   text-align: justify;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 499px) {
+@media only screen and (min-width: 300px) and (max-width: 399px) {
   .Titulo_Tema {
     padding: 20% 0 0 5%;
     font-size: 90%;
@@ -323,12 +323,75 @@
 
   .Descripcion,
   .Descripcion_2 {
-    height: 80%;
+    height: 100%;
     margin-top: -5%;
   }
 
   .Descripcion_2 {
-    margin-top: -40%;
+    margin-top: -20%;
+  }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+  .Titulo_Tema {
+    padding: 20% 0 0 5%;
+    font-size: 90%;
+  }
+
+  .Imagen_Tema {
+    height: 15%;
+  }
+
+  .Descripcion_Figura_Info_Titulo,
+  .Descripcion2_Figura_Info_Titulo{
+    font-size: 80%;
+  }
+
+  .Descripcion_Figura_Info_Descripcion,
+  .Descripcion2_Figura_Info_Descripcion{
+    font-size: 70%;
+    margin-top: -10%;
+  }
+
+  .Descripcion_Figura,
+  .Descripcion2_Figura {
+    grid-template-columns: 38% 30%;
+  }
+
+  .Descripcion_Figura_Info,
+  .Descripcion2_Figura_Info {
+    grid-template-rows: 50% 53%;
+  }
+
+  .Descripcion_Figura_Imagen img,
+  .Descripcion2_Figura_Imagen img{
+    width: 100%;
+  }
+
+  .Descripcion_Informacion_1,
+  .Descripcion2_Informacion_1{
+    font-size: 70%;
+  }
+
+  .Descripcion_Informacion_2,
+  .Descripcion2_Informacion_2{
+    font-size: 70%;
+  }
+
+  .Descripcion_Informacion_3,
+  .Descripcion2_Informacion_3{
+    font-size: 70%;
+  }
+
+  .Descripcion,
+  .Descripcion_2 {
+    height: 100%;
+    margin-top: -5%;
+  }
+
+  .Descripcion_2 {
+    margin-top: -30%;
   }
 
 }
@@ -341,7 +404,7 @@
 
   .Descripcion,
   .Descripcion_2 {
-    height: 75%;
+    height: 100%;
     margin-top: 7%;
   }
 
@@ -405,7 +468,7 @@
 
   .Descripcion,
   .Descripcion_2 {
-    height: 75%;
+    height: 100%;
     margin-top: 7%;
   }
 
@@ -469,7 +532,7 @@
 
   .Descripcion,
   .Descripcion_2 {
-    height: 70%;
+    height: 100%;
   }
 
   .Descripcion,
