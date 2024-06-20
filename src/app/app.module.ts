@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { Tema1Component } from './tema1/tema1.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TemaPrincipalComponent } from './tema-principal/tema-principal.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     Tema1Component,
     NavbarComponent,
+    TemaPrincipalComponent,
   ],
   imports: [
     BrowserModule,
