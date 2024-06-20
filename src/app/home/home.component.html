@@ -7,45 +7,32 @@
   </section>
 
   <section class="contenido1">
-    <img src= {{data[0].Imagen}} alt="imagentema">
-
+    <img class="img" src="{{data[0].Imagen}}" alt="imagentema">
     <div class="Texto">
-      <div class="Texto_Titulo" style="padding-left: 40px;">
-        {{data[0].Titulo}}
-      </div>
-      <div class="Texto_Texto" style="overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none;;">
-        {{data[0].Descripcion}}
-      </div>
+      <div class="Texto_Titulo">{{data[0].Titulo}}</div>
+      <div class="Texto_Texto">{{data[0].Descripcion}}</div>
       <div class="Texto_Subtema">
-        <select name="" id=""  (input)="actualizarTema($event)" required>
+        <select name="" id="" (input)="actualizarTema($event)" required>
           <option value="" disabled selected>Seleccione un tema</option>
-
           <option value="tema1">Conoce más</option>
-          <option *ngFor="let tema of data[0].Subtemas" [value]="tema"> {{tema}} </option>
+          <option *ngFor="let tema of data[0].Subtemas" [value]="tema">{{tema}}</option>
         </select>
       </div>
     </div>
-
   </section>
 
   <section class="contenido2">
-    <img src= {{data[1].Imagen}} alt="imagentema">
-
+    <img src="{{data[1].Imagen}}" alt="imagentema">
     <div class="Texto">
-      <div class="Texto_Titulo" style="padding-left: 40px;">
-        {{data[1].Titulo}}
-      </div>
-      <div class="Texto_Texto" style="overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none;;">
-        {{data[1].Descripcion}}
-      </div>
+      <div class="Texto_Titulo">{{data[1].Titulo}}</div>
+      <div class="Texto_Texto">{{data[1].Descripcion}}</div>
       <div class="Texto_Subtema">
-        <select name="" id=""  (input)="actualizarTema($event)" required>
+        <select name="" id="" (input)="actualizarTema($event)" required>
           <option value="" disabled selected>Seleccione un tema</option>
-
           <option value="tema2">Conoce más</option>
-          <option *ngFor="let tema of data[1].Subtemas" [value]="tema"> {{tema}} </option>
+          <option *ngFor="let tema of data[1].Subtemas" [value]="tema">{{tema}}</option>
         </select>
       </div>
     </div>
-
-    </section>
+  </section>
+</article>

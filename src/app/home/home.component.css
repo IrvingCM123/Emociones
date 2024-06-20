@@ -4,7 +4,8 @@
   align-items: center;
   height: 100vh;
   min-height: max-content;
-  background-color: #ff2f2f;
+  background-color: #ffffff;
+  padding: 0%;
   display: grid;
   grid-template-rows: 30% 70%;
   grid-template-columns: 50% 50%;
@@ -23,15 +24,14 @@
 .titulo {
   grid-area: titulo;
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
   font-weight: bold;
   height: 100%;
-  background-color: #5bffef;
+  
 }
-h1{
-  font-size: 2em;
-  color: #0f9285;
-  background-color: black;
-}
+
 .contenido1 {
   grid-area: contenido1;
   display: flex;
@@ -58,6 +58,7 @@ h1{
   word-wrap: break-word;
   width: 100%;
 }
+
 .Texto {
   display: grid;
   grid-template-rows: 20% 50% 25%;
@@ -103,9 +104,10 @@ display: none;  /* Safari and Chrome */
 }
 
 .Texto_Subtema select {
-  border: 1px solid #019687;
+  border:none;
   color: #ffffff;
   background-color: #21b2a4;
+  border-radius: 5px;
 }
 
 .contenido2 {
@@ -116,7 +118,6 @@ display: none;  /* Safari and Chrome */
   align-items: center;
   border-radius: 10px;
   text-align: justify;
-  background-color: #d9ff32;
 
 }
 

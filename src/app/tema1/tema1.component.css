@@ -1,17 +1,28 @@
 .Contenedor {
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-rows: 15% 40% 40%;
   grid-template-areas:
     "Tema"
     "Descripcion"
     "Descripcion_2";
-  height: 140vh;
+  height: 90%;
   min-height: max-content;
   overflow-y: scroll;
-  overflow-x: scroll;
+  overflow-x: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
+    color: #0f9285;
+    border: 1px solid #0f9285;
+    border-radius: 10px;
+margin-left: 5rem;
+justify-content: center;
+padding-left: 7rem;
+padding-top: 2rem;
+margin-bottom: 2rem;
+}
+img{
+  border-radius: 10px;
 }
 
 .Contenedor::-webkit-scrollbar {
@@ -29,9 +40,10 @@
 }
 
 .Tema_Titulo {
-  font-size: 150%;
+  font-size: 50px;
   display: flex;
   padding: 8% 0 0 20%;
+  color: #11a68f;
 }
 
 .Tema {
@@ -41,6 +53,7 @@
   grid-template-areas: "Imagen_Tema Titulo_Tema";
   height: 100%;
   padding: 2% 15%;
+  
 }
 
 .Imagen_Tema {
@@ -59,13 +72,14 @@
   margin: 0px;
   padding: 6% 0 0 30%;
   font-size: 150%;
+  color: #11a68f;
+
 }
 
 .Descripcion {
   grid-area: Descripcion;
   margin: 0px;
   padding:2%;
-
   display: grid;
   grid-template-rows: 40% 38%;
   grid-template-areas:
@@ -73,7 +87,7 @@
     "informacion";
   height: 100%;
   padding: 2% 15%;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 .Descripcion_Figura {
@@ -104,7 +118,7 @@
   width: 100%;
   word-wrap: break-word;
   font-size: 150%;
-  color: #000000;
+  color: #0f9285;
 }
 
 .Descripcion_Figura_Info_Descripcion {
@@ -208,7 +222,7 @@
   width: 100%;
   word-wrap: break-word;
   font-size: 150%;
-  color: #000000;
+  color: #0f9285;
 }
 
 .Descripcion2_Figura_Info_Descripcion {
@@ -272,17 +286,24 @@
 
 @media only screen and (min-width: 300px) and (max-width: 399px) {
   .Titulo_Tema {
-    padding: 20% 0 0 5%;
+    padding: 20% 0 0 10%;
     font-size: 90%;
   }
 
   .Imagen_Tema {
     height: 15%;
   }
+  .Contenedor{
+    padding: 0;
+    margin: 1rem;
+    width: 90%;
+    padding-top: 1rem;
+  }
 
   .Descripcion_Figura_Info_Titulo,
   .Descripcion2_Figura_Info_Titulo{
     font-size: 80%;
+    
   }
 
   .Descripcion_Figura_Info_Descripcion,
@@ -415,6 +436,7 @@
   .Contenedor{
     grid-template-rows: 15% 40% 40%;
     height: 100vh;
+    padding: 0;
   }
 
   .Descripcion_Figura_Info_Titulo,
