@@ -73,6 +73,8 @@ img{
   padding: 6% 0 0 30%;
   font-size: 150%;
   color: #11a68f;
+  width: 100%;
+  word-wrap: break-word;
 
 }
 
