@@ -186,16 +186,13 @@ display: none;  /* Safari and Chrome */
     height: 100%;
   }
 
-  .TextoTitulo {
-    font-size: 80%;
-    min-height: 100%;
-    min-width: 100%;
-    padding: 40px;
+  .Texto_Titulo {
+    font-size: 75%;
   }
 
   .Texto_Texto {
     padding: 1% 0 0 2%;
-    font-size: 75%;
+    font-size: 70%;
     min-height: 102%;
     min-width: 100%;
     overflow: hidden;
@@ -290,15 +287,13 @@ display: none;  /* Safari and Chrome */
     padding-top: 2%;
   }
 
-  .TextoTitulo {
-    font-size: 80%;
-    min-height: 100%;
-    min-width: 100%;
+   .Texto_Titulo {
+    font-size: 75%;
   }
 
   .Texto_Texto {
     padding: 2% 0 0 2%;
-    font-size: 90%;
+    font-size: 80%;
     min-height: 100%;
     min-width: 100%;
     overflow: hidden;
