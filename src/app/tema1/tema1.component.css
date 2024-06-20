@@ -488,24 +488,24 @@ img{
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
   .Titulo_Tema {
-    padding: 10% 0 0 5%;
+    padding: 20% 0 0 5%;
     font-size: 90%;
-  }
-
-  .Imagen_Tema {
-    grid-area: Imagen_Tema;
-    width: 100%;
-    height: 15%;
   }
 
   .Descripcion,
   .Descripcion_2 {
     height: 100%;
-    margin-top: 1%;
+    margin-top: 7%;
   }
 
+  .Contenedor{
+    padding: 0;
+    margin: 2.3rem;
+    width: 90%;
+    padding-top: 1rem;
+  }
   .Descripcion_2 {
-    margin-top: -2%
+    margin-top: -15%;
   }
 
   .Contenedor{
@@ -515,13 +515,13 @@ img{
 
   .Descripcion_Figura_Info_Titulo,
   .Descripcion2_Figura_Info_Titulo{
-    font-size: 60%;
+    font-size: 80%;
   }
 
   .Descripcion_Figura_Info_Descripcion,
   .Descripcion2_Figura_Info_Descripcion{
-    font-size: 60%;
-    margin-top: -3%;
+    font-size: 70%;
+    margin-top: -10%;
   }
 
   .Descripcion_Figura,
@@ -541,28 +541,24 @@ img{
 
   .Descripcion_Informacion_1,
   .Descripcion2_Informacion_1{
-    margin-top: -7%;
-    font-size: 60%;
-    height: 100%;
+    font-size: 70%;
   }
 
   .Descripcion_Informacion_2,
   .Descripcion2_Informacion_2{
-    font-size: 60%;
-    margin-top: -7%;
-    height: 100%;
+    font-size: 70%;
   }
 
   .Descripcion_Informacion_3,
   .Descripcion2_Informacion_3{
-    font-size: 60%;
+    font-size: 70%;
   }
 
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1000px) {
   .Titulo_Tema {
-    padding: 5% 0 0 5%;
+    padding: 20% 0 0 5%;
     font-size: 90%;
   }
 
@@ -571,20 +567,14 @@ img{
     height: 100%;
   }
 
-  .Imagen_Tema {
-    grid-area: Imagen_Tema;
-    width: 100%;
-    height: 15%;
-  }
-
   .Descripcion,
   .Descripcion_2 {
     height: 75%;
-    margin-top: 0%;
+    margin-top: 7%;
   }
 
   .Descripcion_2 {
-    margin-top: -5%;
+    margin-top: -15%;
   }
 
   .Contenedor{
@@ -594,12 +584,12 @@ img{
 
   .Descripcion_Figura_Info_Titulo,
   .Descripcion2_Figura_Info_Titulo{
-    font-size: 70%;
+    font-size: 80%;
   }
 
   .Descripcion_Figura_Info_Descripcion,
   .Descripcion2_Figura_Info_Descripcion{
-    font-size: 60%;
+    font-size: 90%;
   }
 
   .Descripcion_Figura,
@@ -619,17 +609,17 @@ img{
 
   .Descripcion_Informacion_1,
   .Descripcion2_Informacion_1{
-    font-size: 60%;
+    font-size: 70%;
   }
 
   .Descripcion_Informacion_2,
   .Descripcion2_Informacion_2{
-    font-size: 60%;
+    font-size: 70%;
   }
 
   .Descripcion_Informacion_3,
   .Descripcion2_Informacion_3{
-    font-size: 60%;
+    font-size: 70%;
   }
 }
 
