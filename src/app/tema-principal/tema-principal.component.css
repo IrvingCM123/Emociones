@@ -58,7 +58,7 @@
 @media only screen and (min-width: 300px) and (max-width: 499px) {
     .recuadro {
         flex-direction: column;
-        height: 80vh;
+        height: 81vh;
         width: auto;
         margin: 2vh 3vw;
     }
@@ -66,18 +66,17 @@
     .contenido {
         margin: 0;
         width: 100%;
-        overflow: scroll;
         min-height: 45vh;
-    }
-    .descripcion {
-
-        height: auto;
+        overflow: scroll;     
 
     }
-    
     .conclusion {
+    min-height: auto;
     }
-
+ 
+    .contenido h2{
+        height: auto;
+    }
     .imagen img {
         max-width: 74%;
         border-radius: 5px;
