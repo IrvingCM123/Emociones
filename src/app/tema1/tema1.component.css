@@ -333,6 +333,10 @@
 
 }
 
+@media only screen and (min-width: 400px) and (max-width: 499px) and (orientation: landscape) {
+
+}
+
 @media only screen and (min-width: 400px) and (max-width: 499px) {
   .Titulo_Tema {
     padding: 20% 0 0 5%;
@@ -398,18 +402,18 @@
 
 @media only screen and (min-width: 500px) and (max-width: 600px) {
   .Titulo_Tema {
-    padding: 20% 0 0 5%;
+    padding: 5% 0 0 5%;
     font-size: 90%;
   }
 
   .Descripcion,
   .Descripcion_2 {
     height: 100%;
-    margin-top: 7%;
+    margin-top: 4%;
   }
 
   .Descripcion_2 {
-    margin-top: -15%;
+    margin-top: 2%;
   }
 
   .Contenedor{
@@ -419,13 +423,13 @@
 
   .Descripcion_Figura_Info_Titulo,
   .Descripcion2_Figura_Info_Titulo{
-    font-size: 80%;
+    font-size: 55%;
   }
 
   .Descripcion_Figura_Info_Descripcion,
   .Descripcion2_Figura_Info_Descripcion{
-    font-size: 70%;
-    margin-top: -10%;
+    font-size: 53%;
+    margin-top: -1%;
   }
 
   .Descripcion_Figura,
@@ -446,17 +450,17 @@
 
   .Descripcion_Informacion_1,
   .Descripcion2_Informacion_1{
-    font-size: 70%;
+    font-size: 50%;
   }
 
   .Descripcion_Informacion_2,
   .Descripcion2_Informacion_2{
-    font-size: 70%;
+    font-size: 50%;
   }
 
   .Descripcion_Informacion_3,
   .Descripcion2_Informacion_3{
-    font-size: 70%;
+    font-size: 50%;
   }
 }
 
@@ -534,7 +538,7 @@
 
 }
 
-@media only screen and (min-width: 801px) and (max-width: 899px) {
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
   .Titulo_Tema {
     padding: 5% 0 0 5%;
     font-size: 90%;
@@ -607,72 +611,7 @@
   }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 999px) {
-  .Titulo_Tema {
-    padding: 15% 0 0 5%;
-    font-size: 110%;
-  }
-
-  .Descripcion,
-  .Descripcion_2 {
-    height: 70%;
-  }
-
-  .Descripcion,
-  .Descripcion_2 {
-    height: 75%;
-    margin-top: 7%;
-  }
-
-  .Descripcion_2 {
-    margin-top: -20%;
-  }
-
-  .Contenedor{
-    grid-template-rows: 15% 40% 40%;
-    height: 100vh;
-  }
-
-  .Descripcion_Figura_Info_Titulo,
-  .Descripcion2_Figura_Info_Titulo{
-    font-size: 110%;
-  }
-
-  .Descripcion_Figura_Info_Descripcion,
-  .Descripcion2_Figura_Info_Descripcion{
-    font-size: 110%;
-  }
-
-  .Descripcion_Figura,
-  .Descripcion2_Figura {
-    grid-template-columns: 38% 30%;
-  }
-
-  .Descripcion_Figura_Info,
-  .Descripcion2_Figura_Info {
-    grid-template-rows: 50% 53%;
-  }
-
-  .Descripcion_Figura_Imagen img,
-  .Descripcion2_Figura_Imagen img{
-    width: 100%;
-  }
-
-  .Descripcion_Informacion_1,
-  .Descripcion2_Informacion_1{
-    font-size: 70%;
-  }
-
-  .Descripcion_Informacion_2,
-  .Descripcion2_Informacion_2{
-    font-size: 70%;
-  }
-
-  .Descripcion_Informacion_3,
-  .Descripcion2_Informacion_3{
-    font-size: 70%;
-  }
-}
+ 
 
 @media only screen and (min-width: 1001px) and (max-width: 1200px) {
 }
