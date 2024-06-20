@@ -324,11 +324,11 @@
   .Descripcion,
   .Descripcion_2 {
     height: 80%;
-    margin-top: 2%;
+    margin-top: -5%;
   }
 
   .Descripcion_2 {
-    margin-top: -35%;
+    margin-top: -40%;
   }
 
 }
