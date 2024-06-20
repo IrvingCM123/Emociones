@@ -75,7 +75,11 @@ img{
   color: #11a68f;
   width: 100%;
   word-wrap: break-word;
+}
 
+.Titulo_Tema h3 {
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .Descripcion {
