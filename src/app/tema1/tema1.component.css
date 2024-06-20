@@ -1,11 +1,15 @@
 .Contenedor {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 15% 40% 40%;
+  grid-template-areas:
+    "Tema"
+    "Descripcion"
+    "Descripcion_2";
+  height: 140vh;
   min-height: max-content;
   overflow-y: scroll;
-  display: grid;
-  grid-template-rows: 20% 40% 30%;
-  grid-template-areas: "Tema" "Descripcion" "Descripcion2";
+  overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -14,24 +18,35 @@
   display: none;
 }
 
+.Contenedor {
+  display: grid;
+  grid-template-rows: 15% 40% 40%;
+  grid-template-areas:
+    "Tema"
+    "Descripcion"
+    "Descripcion_2";
+  height: 140vh;
+}
+
+.Tema_Titulo {
+  font-size: 150%;
+  display: flex;
+  padding: 8% 0 0 20%;
+}
+
 .Tema {
   grid-area: Tema;
-  display:grid;
-  grid-template-columns: 30% 70%;
-  margin: 0px;
-  padding: 0px;
-  border-bottom: 3px solid black;
+  display: grid;
+  grid-template-columns: 20% 60%;
+  grid-template-areas: "Imagen_Tema Titulo_Tema";
   height: 100%;
-  grid-template-areas: "Imagen_Tema" "Titulo_Tema";
+  padding: 2% 15%;
 }
 
 .Imagen_Tema {
   grid-area: Imagen_Tema;
   width: 100%;
-  height: 26%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  height: 21%;
 }
 
 .Imagen_Tema img {
@@ -41,71 +56,72 @@
 
 .Titulo_Tema {
   grid-area: Titulo_Tema;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0px;
-  padding: 0px;
-  border: 1px solid black;
-
+  padding: 6% 0 0 30%;
+  font-size: 150%;
 }
 
 .Descripcion {
   grid-area: Descripcion;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0px;
-  padding: 2%;
-  border: 1px solid black;
-  display: grid;
-  grid-template-rows: 80% 20%;
-  grid-template-areas:
-  "figura"
-  "informacion";
-}
+  padding:2%;
 
-.Descripcion2 {
-  grid-area: Descripcion2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px;
-  padding: 2%;
-  border: 1px solid black;
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 40% 38%;
   grid-template-areas:
-  "figura"
-  "informacion";
+    "figura"
+    "informacion";
   height: 100%;
+  padding: 2% 15%;
+  margin-top: 3%;
 }
 
 .Descripcion_Figura {
   grid-area: figura;
   display: grid;
-  grid-template-rows: 30% 70%;
-  grid-template-columns: 60% 40%;
-  width: 100%;
+  grid-template-columns: 38% 30%;
+  grid-template-areas: "Descripcion_Figura Imagen_Figura";
   height: 100%;
+  width: 100%;
+}
+
+.Descripcion_Figura_Info {
+  grid-area: Descripcion_Figura;
+  display: grid;
+  grid-template-rows: 50% 53%;
   grid-template-areas:
-  "titulo imagen"
-  "descripcion imagen";
-}
-
-.Descripcion_Figura_titulo {
-  grid-area: titulo;
-}
-
-.Descripcion_Figura_descripcion {
-  grid-area: descripcion;
-  width: 90%;
+    "Descripcion_Figura_Info_Titulo"
+    "Descripcion_Figura_Info_Descripcion";
+  height: 100%;
+  width: 100%;
   word-wrap: break-word;
 }
 
-.Descripcion_Figura img {
-  grid-area: imagen;
-  border: 2px solid black;
+.Descripcion_Figura_Info_Titulo {
+  grid-area: Descripcion_Figura_Info_Titulo;
+  padding: 3% 0 0 5%;
+  min-height: 100%;
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 150%;
+  color: #000000;
+}
+
+.Descripcion_Figura_Info_Descripcion {
+  grid-area: Descripcion_Figura_Info_Descripcion;
+  padding: 0 0 0 0%;
+  min-height: 100%;
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 100%;
+  text-align: justify;
+}
+
+.Descripcion_Figura_Imagen {
+  grid-area: Imagen_Figura;
+  width: 100%;
+  height: 100%;
+  margin-left: 10%;
 }
 
 .Descripcion_Informacion {
@@ -113,76 +129,472 @@
   display: grid;
   grid-template-columns: 30% 30% 30%;
   column-gap: 3%;
-  grid-template-areas: "titulo1 titulo2 titulo3";
+  grid-template-areas:
+  "Descripcion_Informacion_1 Descripcion_Informacion_2 Descripcion_Informacion_3";
+  height: 100%;
+  width: 60%;
+  padding-top: 1%;
+}
+
+.Descripcion_Figura_Imagen img {
+  width: 60%;
+  height: 100%;
+}
+
+.Descripcion_Informacion_1 {
+  grid-area: Descripcion_Informacion_1;
+  height: 100%;
+  width: 100%;
+  font-size: 90%;
+  text-align: justify;
+}
+
+.Descripcion_Informacion_2 {
+  grid-area: Descripcion_Informacion_2;
+  height: 100%;
+  width: 100%;
+  font-size: 90%;
+  text-align: justify;
+}
+
+.Descripcion_Informacion_3 {
+  grid-area: Descripcion_Informacion_3;
+  height: 100%;
+  width: 100%;
+  font-size: 90%;
+  text-align: justify;
+}
+
+.Descripcion_2 {
+  grid-area: Descripcion_2;
+  margin: 0px;
+  padding: 2%;
+
+  display: grid;
+  grid-template-rows: 40% 38%;
+  grid-template-areas:
+    "figura_2"
+    "informacion_2";
+  height: 100%;
+  padding: 2% 15%;
+  margin-top: -3%;
+}
+
+.Descripcion2_Figura {
+  grid-area: figura_2;
+  display: grid;
+  grid-template-columns: 38% 30%;
+  grid-template-areas: "Descripcion2_Figura Imagen2_Figura";
   height: 100%;
   width: 100%;
 }
 
-.Descripcion_Informacion_titulo1 {
-  grid-area: titulo1;
+.Descripcion2_Figura_Info {
+  grid-area: Descripcion2_Figura;
+  display: grid;
+  grid-template-rows: 50% 53%;
+  grid-template-areas:
+    "Descripcion2_Figura_Info_Titulo"
+    "Descripcion2_Figura_Info_Descripcion";
+  height: 100%;
   width: 100%;
   word-wrap: break-word;
 }
 
-.Descripcion_Informacion_titulo2 {
-  grid-area: titulo2;
+.Descripcion2_Figura_Info_Titulo {
+  grid-area: Descripcion2_Figura_Info_Titulo;
+  padding: 3% 0 0 5%;
+  min-height: 100%;
   width: 100%;
   word-wrap: break-word;
+  font-size: 150%;
+  color: #000000;
 }
 
-.Descripcion_Informacion_titulo3 {
-  grid-area: titulo3;
+.Descripcion2_Figura_Info_Descripcion {
+  grid-area: Descripcion2_Figura_Info_Descripcion;
+  padding: 0 0 0 0%;
+  min-height: 100%;
   width: 100%;
   word-wrap: break-word;
-}
-
-@media only screen and (min-width: 300px) and (max-width: 499px)  {
-
-}
-
-@media only screen and (min-width: 500px) and (max-width: 600px)  {
+  font-size: 100%;
+  text-align: justify;
 
 }
 
-@media only screen and (min-width: 601px) and (max-width: 800px)  {
+.Descripcion2_Figura_Imagen {
+  grid-area: Imagen2_Figura;
+  width: 100%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.Descripcion2_Figura_Imagen img {
+  width: 60%;
+  height: 100%;
+}
+
+.Descripcion2_Informacion {
+  grid-area: informacion_2;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 3%;
+  grid-template-areas:
+  "Descripcion2_Informacion_1 Descripcion2_Informacion_2 Descripcion2_Informacion_3";
+  height: 100%;
+  width: 60%;
+  padding-top: 1%;
+}
+
+.Descripcion2_Informacion_1 {
+  grid-area: Descripcion2_Informacion_1;
+  height: 100%;
+  width: 100%;
+  font-size: 90%;
+  text-align: justify;
+}
+
+.Descripcion2_Informacion_2 {
+  grid-area: Descripcion2_Informacion_2;
+  height: 100%;
+  width: 100%;
+  font-size: 90%;
+  text-align: justify;
+}
+
+.Descripcion2_Informacion_3 {
+  grid-area: Descripcion2_Informacion_3;
+  height: 100%;
+  width: 100%;
+  font-size: 90%;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 499px) {
+  .Titulo_Tema {
+    padding: 20% 0 0 5%;
+    font-size: 90%;
+  }
+
+  .Imagen_Tema {
+    height: 15%;
+  }
+
+  .Descripcion_Figura_Info_Titulo,
+  .Descripcion2_Figura_Info_Titulo{
+    font-size: 80%;
+  }
+
+  .Descripcion_Figura_Info_Descripcion,
+  .Descripcion2_Figura_Info_Descripcion{
+    font-size: 90%;
+  }
+
+  .Descripcion_Figura,
+  .Descripcion2_Figura {
+    grid-template-columns: 38% 30%;
+  }
+
+  .Descripcion_Figura_Info,
+  .Descripcion2_Figura_Info {
+    grid-template-rows: 50% 53%;
+  }
+
+  .Descripcion_Figura_Imagen img,
+  .Descripcion2_Figura_Imagen img{
+    width: 100%;
+  }
+
+  .Descripcion_Informacion_1,
+  .Descripcion2_Informacion_1{
+    font-size: 90%;
+  }
+
+  .Descripcion_Informacion_2,
+  .Descripcion2_Informacion_2{
+    font-size: 90%;
+  }
+
+  .Descripcion_Informacion_3,
+  .Descripcion2_Informacion_3{
+    font-size: 90%;
+  }
+
+  .Descripcion,
+  .Descripcion_2 {
+    height: 80%;
+    margin-top: 2%;
+  }
+
+  .Descripcion_2 {
+    margin-top: -35%;
+  }
 
 }
 
-@media only screen and (min-width: 801px) and (max-width: 899px)  {
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .Titulo_Tema {
+    padding: 20% 0 0 5%;
+    font-size: 90%;
+  }
+
+  .Descripcion,
+  .Descripcion_2 {
+    height: 75%;
+    margin-top: 7%;
+  }
+
+  .Descripcion_2 {
+    margin-top: -15%;
+  }
+
+  .Contenedor{
+    grid-template-rows: 15% 40% 40%;
+    height: 100vh;
+  }
+
+  .Descripcion_Figura_Info_Titulo,
+  .Descripcion2_Figura_Info_Titulo{
+    font-size: 80%;
+  }
+
+  .Descripcion_Figura_Info_Descripcion,
+  .Descripcion2_Figura_Info_Descripcion{
+    font-size: 90%;
+  }
+
+  .Descripcion_Figura,
+  .Descripcion2_Figura {
+    grid-template-columns: 38% 30%;
+
+  }
+
+  .Descripcion_Figura_Info,
+  .Descripcion2_Figura_Info {
+    grid-template-rows: 50% 53%;
+  }
+
+  .Descripcion_Figura_Imagen img,
+  .Descripcion2_Figura_Imagen img{
+    width: 100%;
+  }
+
+  .Descripcion_Informacion_1,
+  .Descripcion2_Informacion_1{
+    font-size: 90%;
+  }
+
+  .Descripcion_Informacion_2,
+  .Descripcion2_Informacion_2{
+    font-size: 90%;
+  }
+
+  .Descripcion_Informacion_3,
+  .Descripcion2_Informacion_3{
+    font-size: 90%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .Titulo_Tema {
+    padding: 20% 0 0 5%;
+    font-size: 90%;
+  }
+
+  .Descripcion,
+  .Descripcion_2 {
+    height: 75%;
+    margin-top: 7%;
+  }
+
+  .Descripcion_2 {
+    margin-top: -15%;
+  }
+
+  .Contenedor{
+    grid-template-rows: 15% 40% 40%;
+    height: 100vh;
+  }
+
+  .Descripcion_Figura_Info_Titulo,
+  .Descripcion2_Figura_Info_Titulo{
+    font-size: 80%;
+  }
+
+  .Descripcion_Figura_Info_Descripcion,
+  .Descripcion2_Figura_Info_Descripcion{
+    font-size: 90%;
+  }
+
+  .Descripcion_Figura,
+  .Descripcion2_Figura {
+    grid-template-columns: 38% 30%;
+  }
+
+  .Descripcion_Figura_Info,
+  .Descripcion2_Figura_Info {
+    grid-template-rows: 50% 53%;
+  }
+
+  .Descripcion_Figura_Imagen img,
+  .Descripcion2_Figura_Imagen img{
+    width: 100%;
+  }
+
+  .Descripcion_Informacion_1,
+  .Descripcion2_Informacion_1{
+    font-size: 90%;
+  }
+
+  .Descripcion_Informacion_2,
+  .Descripcion2_Informacion_2{
+    font-size: 90%;
+  }
+
+  .Descripcion_Informacion_3,
+  .Descripcion2_Informacion_3{
+    font-size: 90%;
+  }
 
 }
 
-@media only screen and (min-width: 900px) and (max-width: 999px)  {
+@media only screen and (min-width: 801px) and (max-width: 899px) {
+  .Titulo_Tema {
+    padding: 20% 0 0 5%;
+    font-size: 90%;
+  }
 
+  .Descripcion,
+  .Descripcion_2 {
+    height: 70%;
+  }
+
+  .Descripcion,
+  .Descripcion_2 {
+    height: 75%;
+    margin-top: 7%;
+  }
+
+  .Descripcion_2 {
+    margin-top: -15%;
+  }
+
+  .Contenedor{
+    grid-template-rows: 15% 40% 40%;
+    height: 100vh;
+  }
+
+  .Descripcion_Figura_Info_Titulo,
+  .Descripcion2_Figura_Info_Titulo{
+    font-size: 80%;
+  }
+
+  .Descripcion_Figura_Info_Descripcion,
+  .Descripcion2_Figura_Info_Descripcion{
+    font-size: 90%;
+  }
+
+  .Descripcion_Figura,
+  .Descripcion2_Figura {
+    grid-template-columns: 38% 30%;
+  }
+
+  .Descripcion_Figura_Info,
+  .Descripcion2_Figura_Info {
+    grid-template-rows: 50% 53%;
+  }
+
+  .Descripcion_Figura_Imagen img,
+  .Descripcion2_Figura_Imagen img{
+    width: 100%;
+  }
+
+  .Descripcion_Informacion_1,
+  .Descripcion2_Informacion_1{
+    font-size: 90%;
+  }
+
+  .Descripcion_Informacion_2,
+  .Descripcion2_Informacion_2{
+    font-size: 90%;
+  }
+
+  .Descripcion_Informacion_3,
+  .Descripcion2_Informacion_3{
+    font-size: 90%;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 999px) {
+  .Titulo_Tema {
+    padding: 15% 0 0 5%;
+    font-size: 110%;
+  }
+
+  .Descripcion,
+  .Descripcion_2 {
+    height: 70%;
+  }
+
+  .Descripcion,
+  .Descripcion_2 {
+    height: 75%;
+    margin-top: 7%;
+  }
+
+  .Descripcion_2 {
+    margin-top: -20%;
+  }
+
+  .Contenedor{
+    grid-template-rows: 15% 40% 40%;
+    height: 100vh;
+  }
+
+  .Descripcion_Figura_Info_Titulo,
+  .Descripcion2_Figura_Info_Titulo{
+    font-size: 110%;
+  }
+
+  .Descripcion_Figura_Info_Descripcion,
+  .Descripcion2_Figura_Info_Descripcion{
+    font-size: 110%;
+  }
+
+  .Descripcion_Figura,
+  .Descripcion2_Figura {
+    grid-template-columns: 38% 30%;
+  }
+
+  .Descripcion_Figura_Info,
+  .Descripcion2_Figura_Info {
+    grid-template-rows: 50% 53%;
+  }
+
+  .Descripcion_Figura_Imagen img,
+  .Descripcion2_Figura_Imagen img{
+    width: 100%;
+  }
+
+  .Descripcion_Informacion_1,
+  .Descripcion2_Informacion_1{
+    font-size: 90%;
+  }
+
+  .Descripcion_Informacion_2,
+  .Descripcion2_Informacion_2{
+    font-size: 90%;
+  }
+
+  .Descripcion_Informacion_3,
+  .Descripcion2_Informacion_3{
+    font-size: 90%;
+  }
 }
 
 @media only screen and (min-width: 1001px) and (max-width: 1200px) {
-
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1500px) {
-  .Contenedor {
-    grid-template-rows: 30% 30% 30%;
-    min-height: max-content;
-  }
-
-  .Tema_Titulo {
-    font-size: 150%;
-    display: flex;
-    padding: 8% 0 0 20%;
-  }
-
-  .Descripcion_Figura img {
-    width: 35%;
-    height: 26%;
-  }
-
-  .Descripcion {
-    height: 100%;
-  }
-
-  .Descripcion2 {
-    height: 100%;
-  }
 
 }
