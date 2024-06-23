@@ -204,7 +204,8 @@
   }
 
   .Conclusion span {
-    margin-top: -10%;
+    font-size: 70%;
+    margin-top: -50%;
     color: #0f9285;
   }
 }
