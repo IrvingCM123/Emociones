@@ -76,7 +76,6 @@
   height: max-content;
   width: 85%;
   overflow-y: scroll;
-  overflow-x: scroll;
   word-wrap: break-word;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -92,7 +91,7 @@
 .Preguntas div p {
   margin: 0;
   padding: 0;
-  min-width: 95%;
+  width: 60%;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -108,7 +107,7 @@
 .Preguntas div span {
   margin: 0;
   padding: 0;
-  min-width: 95%;
+  width: 90%;
   height: fit-content;
   display: flex;
   flex-direction: column;
