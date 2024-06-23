@@ -80,9 +80,9 @@
   word-wrap: break-word;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #0f9285;
   color: #0f9285;
-
+  margin-bottom: 5%;
 }
 
 .Preguntas_Texto::-webkit-scrollbar {
