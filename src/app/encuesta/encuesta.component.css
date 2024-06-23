@@ -1,5 +1,5 @@
 .pantalla {
-  min-height: 100vh;
+  min-height: 120vh;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -7,19 +7,15 @@
   align-items: center;
   overflow-y: scroll;
 }
-.pantalla::-webkit-scrollbar {
-  display: none;
-}
-
 .contenedor {
   min-width: 80%;
   max-width: 600px;
-  min-height: 1000px;
+  min-height: 1500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f1f1f1;
+  border: 1px solid #0f9285;
   border-radius: 10px;
   padding: 2px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -32,6 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #11a68f;
 }
 
 .Titulo div {
@@ -40,6 +37,8 @@
   width: 90%;
   height: 1%;
   color: #000000;
+  color: #11a68f;
+
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -82,6 +81,8 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   border-bottom: 1px solid #000000;
+  color: #0f9285;
+
 }
 
 .Preguntas_Texto::-webkit-scrollbar {
@@ -131,7 +132,7 @@
 }
 
 .Conclusion {
-  height: 15%;
+  height: 40%;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -141,10 +142,14 @@
   padding: 0 10%;
   line-height: 16px;
   padding-left: 5%;
+  margin-bottom: 1%;
 }
 
 .Conclusion div {
   width: 100%;
+  height: 100%;
   word-wrap: break-word;
-
+  color: #0f9285;
+  padding: 0;
+  margin: 0;
 }
