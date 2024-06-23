@@ -7,6 +7,7 @@
   align-items: center;
   overflow-y: scroll;
 }
+
 .contenedor {
   min-width: 80%;
   max-width: 600px;
@@ -131,7 +132,7 @@
 }
 
 .Conclusion {
-  height: 40%;
+  height: 30%;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -151,4 +152,19 @@
   color: #0f9285;
   padding: 0;
   margin: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .Preguntas{
+    width: 80%;
+  }
+
+  .Preguntas div p {
+    font-size: 60%;
+  }
+
+  .Preguntas div span {
+    font-size: 60%;
+  }
 }
