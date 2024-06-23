@@ -1,0 +1,46 @@
+<main class="pantalla">
+
+  <article class="contenedor">
+
+    <section class="Titulo">
+
+        <div class="Titulo_Texto">
+          Encuesta
+        </div>
+
+        <div class="Titulo_Texto">
+          {{Titulo}}
+        </div>
+
+    </section>
+
+    <section class="Preguntas">
+
+      <div class="Preguntas_Texto" *ngFor="let pregunta of Preguntas;">
+        <p>
+          {{pregunta.Pregunta}}
+        </p>
+
+        <img class="imagen" *ngIf="pregunta.Imagen" [src]="pregunta.Imagen" alt="">
+
+        <span *ngFor="let respuesta of pregunta.Respuestas">
+          {{respuesta}}
+        </span>
+
+      </div>
+
+    </section>
+
+    <section class="Conclusion">
+      <div>
+        {{Conclusion.Titulo}}
+      </div>
+
+      <div>
+        {{Conclusion.Conclusion}}
+      </div>
+    </section>
+
+  </article>
+
+</main>

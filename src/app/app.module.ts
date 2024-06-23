@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { Tema1Component } from './tema1/tema1.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TemaPrincipalComponent } from './tema-principal/tema-principal.component';
+import { EncuestaComponent } from './encuesta/encuesta.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TemaPrincipalComponent } from './tema-principal/tema-principal.componen
     Tema1Component,
     NavbarComponent,
     TemaPrincipalComponent,
+    EncuestaComponent,
   ],
   imports: [
     BrowserModule,

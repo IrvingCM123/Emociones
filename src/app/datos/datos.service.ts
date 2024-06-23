@@ -261,6 +261,47 @@ export class DataService {
     }
   ]
 
+  private encuesta = [
+    {
+      Titulo: "COMPETENCIAS EN LA PRÁCTICA"
+    },
+    {
+      Pregunta: "¿Cómo manejaron las situaciones de estrés?",
+      Imagen: "",
+      Respuestas: "Respirando hondo; Primero intentaba controlarme yo, y después buscaba la manera de resolver la problematica; Respirando con calma y realizar actividades para distraerme; Dibujando o rayando mi libreta; Despejo mi mente, voy a mis clases de danza; Alejándome de las personas para tranquilizarme; Gestionando la emoción; Tranquilizarme mediante contar numeros; No lo manejaron; No las manejaron; Buscaba calmarme e intentar respirar tranquilamente; No se de q hablan.; Trato de respirar hasta sentirme mas tranquila; Pues mediante un uso adecuado de mis propias actividades, donde recurri a métodos de investigacion, donde ahora solo tuve que explorar el como reaccionaria en ellos.; Mediante la reflexion y con un estado de calma.; yo? El docente ? Los nifios?; Hablando y calmando al grupo"
+    },
+    {
+      Pregunta: "Durante la jornada de observación, ¿Te percataste si el docente aplica técnicas o actividades de relajación?",
+      Imagen: "/assets/img/Encuesta.png",
+      Respuestas: "Ninguna; Ninguna; Ninguna; No aplicaba; Más son de escucharlos o contarles uno que otro cuento, donde ahora pude saber de qué manera expresa su conformidad o inconformidad de las cosas el niños respecto a ciertos temas.; Ninguna.; Juegos de calma como simon dice"
+    },
+    {
+      Pregunta: "¿Conoces alguna técnica de relajación que apliques en ti?",
+      Imagen: "",
+      Respuestas: "La respiración; Respiracién; No; Respirar o hacer actividades para distraerme; Respiracién profunda y estiramiento; Escuchar música que me gusta; Si, respiración; Respirar; Contar hasta 10, abrazo mariposa y respiracion; Respirar 10 veces de manera profunda y entre cada respiracién exhalar tranquilamente; Escuchar música y bailar.; Darme un baño con agua fria; La de respiraci6n y pensar, la cual consiste en una exhalaci6n e inhalacion de una cierta cantidad de tiempo, donde se mantendra el aire, ademas claro de aplicar un uso adecuado en la conduccién de mis pensamientos.; Si, por ejemplo, la escritura diaria de un journaling; No, no lo hago"
+    },
+    {
+      Pregunta: "¿El docente implementaba alguna técnica para tener control del grupo?",
+      Imagen: "/assets/img/Encuesta2.png",
+      Respuestas: "El ser muy estricto en toda la clase; Ninguna; Alzaba la voz; Alzaba la voz, y decia que no saldrian al recreo; La docente tutora lleva 3 años con el grupo por lo tanto ya tenia control del grupo; Gritar y mantener el orden diciendo que se comportaran; No aplica ninguna, solo los regaña, además de que el docente tiene una voz alta; Pues mediante acciones de llamamiento por un mal comportamiento o actividades las cuales serdn creativas, y resulten entretenidas para los niños.;Los regañaba de ser necesario.; Hablar fuerte; Juegos dinamicos;"
+    },
+    {
+      Pregunta: "¿Cómo incorporaba el maestro actividades lúdicas, juegos o dramatización para explorar las emociones?",
+      Imagen: "",
+      Respuestas: "No las exploraba; Ninguna; No se observó ninguna durante la jornada; El docente a cargo no realizaba algún tipo de actividad referente a las emociones, pero contaban con apoyo de USAER y solo me tocó ver que aplicó; Una actividad para que desarrollaran su imaginacién.; Durante la semana de observación no pude observar que la maestra trabajará; Con el tema de las emociones y platicando con ello lo confirmó.; No aplicó durante la jornada de observación; Intercambio de ideas y poner actividades; No incorporaba; Ponia de ejemplo situaciones de la vida cotidiana, por ejemplo, \"cuando no les compraban un juguete, ¿Cémo se sentian?\".; No habia; No logré observar eso.; En el tiempo observado no vi que aplicará una actividad asi; Pues en su mayoria era mediante preguntas o el uso de disposición de uno que otro, medio para saber cómo se siente el niño respecto a un tema.; Durante mi estancia la maestra tan solo trabajó levemente dentro de sus proyectos el sentir de los alumnos y esto de manera referente a la temática del proyecto.; No incorpora; No lo hacia"
+    },
+    {
+      Pregunta: "¿El maestro utilizaba algún enfoque experimental o no converncional para enseñar competencias emocionales?",
+      Imagen: "/assets/img/Encuesta3.png",
+      Respuestas: "Ninguna; Ninguno; Ninguna; Ninguna; Creo que seria un experimental pero no estaria del todo seguro pues en varias ocasiones se mostraba otro tipo de forma en abordar, con el uso de palabras o mediante actividades didacticas donde se preguntaba lo que les pasaba, como una ronda de preguntas; Ninguno, ella trabaja dichas situaciones de manera convencional"
+    },
+    {
+      Titulo: "Conclusión de la Encuesta sobre Estrategias de Manejo del Estrés y Prácticas Educativas",
+      Conclusion: "Las estrategias de manejo del estrés entre los individuos varían ampliamente, destacando la respiración profunda y calmada como la técnica más comúnmente utilizada. Además, se mencionan actividades creativas y físicas como el dibujo, rayar en una libreta, y asistir a clases de danza. Algunos individuos prefieren alejarse temporalmente de las personas para encontrar tranquilidad o gestionar sus emociones de manera proactiva. En el contexto educativo, la mayoría de los observadores (88.2%) no percibieron la aplicación de técnicas o actividades de relajación por parte del docente durante la jornada de observación. Solo una minoría (11.8%) notó la presencia de algunas actividades de relajación, como juegos de calma (\"Simón dice\") y escuchar o contar cuentos para entender mejor las emociones de los niños. En cuanto al control grupal, se observó que los docentes suelen emplear un tono elevado de voz para mantener el orden, aunque algunos también utilizan juegos. Respecto a la exploración de emociones, la mayoría de los docentes no implementan actividades profundas, limitándose a un tratamiento superficial del tema. Por último, la encuesta reveló que los docentes no suelen utilizar enfoques experimentales para enseñar competencias, o no lo hacen de manera afirmativa o segura. En resumen, mientras que los individuos emplean diversas técnicas para manejar el estrés, en el ámbito educativo se observan limitaciones en la implementación de prácticas de relajación y exploración emocional por parte de los docentes."
+    }
+
+  ]
+
   getData(route: string): any {
     switch (route) {
       case 'tema1':
@@ -289,6 +330,8 @@ export class DataService {
         return this.SubtemaB5;
       case 'home':
         return [this.TemaA, this.TemaB];
+      case "encuesta":
+        return this.encuesta;
     }
   }
 }

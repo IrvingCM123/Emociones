@@ -1,0 +1,150 @@
+.pantalla {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+}
+.pantalla::-webkit-scrollbar {
+  display: none;
+}
+
+.contenedor {
+  min-width: 80%;
+  max-width: 600px;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Titulo {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Titulo div {
+  font-size: 120%;
+  font-weight: 700;
+  width: 90%;
+  height: 1%;
+  color: #000000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Titulo_Texto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.Preguntas {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  overflow-y: scroll;
+  word-wrap: break-word;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.Preguntas::-webkit-scrollbar {
+  display: none;
+}
+
+.Preguntas_Texto {
+  overflow-y: scroll;
+  height: max-content;
+  width: 85%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  word-wrap: break-word;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-bottom: 1px solid #000000;
+}
+
+.Preguntas_Texto::-webkit-scrollbar {
+  display: none;
+}
+
+.Preguntas div p {
+  margin: 0;
+  padding: 0;
+  min-width: 95%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 70%;
+  word-wrap: break-word;
+  padding: 0 2%;
+  line-height: 16px;
+  padding-left: 0%;
+}
+
+.Preguntas div span {
+  margin: 0;
+  padding: 0;
+  min-width: 95%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 70%;
+  word-wrap: break-word;
+  padding: 0 10%;
+  line-height: 16px;
+  padding-left: 2%;
+}
+.Preguntas div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.Preguntas div img {
+  width: 60%;
+  height: 100%;
+}
+
+.Conclusion {
+  height: 15%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 70%;
+  padding: 0 10%;
+  line-height: 16px;
+  padding-left: 5%;
+}
+
+.Conclusion div {
+  width: 100%;
+  word-wrap: break-word;
+
+}

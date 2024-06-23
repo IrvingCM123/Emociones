@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { Tema1Component } from './tema1/tema1.component';
 import { TemaPrincipalComponent } from './tema-principal/tema-principal.component';
+import { EncuestaComponent } from './encuesta/encuesta.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'encuesta', component: EncuestaComponent },
   { path: 'tema1', component: TemaPrincipalComponent},
   { path: 'tema2', component: TemaPrincipalComponent},
   { path: 'Conciencia emocional', component: Tema1Component},
