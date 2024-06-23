@@ -157,7 +157,7 @@
 
 @media only screen and (max-width: 1000px) {
   .Preguntas{
-    width: 80%;
+    width: 90%;
   }
 
   .Preguntas div p {
@@ -165,6 +165,10 @@
   }
 
   .Preguntas div span {
+    font-size: 60%;
+  }
+
+  .Conclusion div {
     font-size: 60%;
   }
 }
