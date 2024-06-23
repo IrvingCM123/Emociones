@@ -204,6 +204,7 @@
   }
 
   .Conclusion span {
-    
+    margin-top: -10%;
+    color: #0f9285;
   }
 }
