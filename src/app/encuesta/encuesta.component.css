@@ -154,9 +154,7 @@
   margin: 0;
 }
 
-
 @media only screen and (max-width: 800px) {
-
   .Titulo div {
     font-size: 80%;
   }
@@ -165,7 +163,7 @@
     width: 70%;
   }
 
-  .Preguntas{
+  .Preguntas {
     width: 90%;
   }
 
@@ -175,6 +173,16 @@
 
   .Preguntas div span {
     font-size: 60%;
+  }
+
+  .Conclusion {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .Conclusion::-webkit-scrollbar {
+    display: none;
   }
 
   .Conclusion div {
