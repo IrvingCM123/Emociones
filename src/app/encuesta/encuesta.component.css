@@ -155,7 +155,16 @@
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
+
+  .Titulo div {
+    font-size: 80%;
+  }
+
+  .Titulo_Texto {
+    width: 70%;
+  }
+
   .Preguntas{
     width: 90%;
   }
@@ -169,6 +178,6 @@
   }
 
   .Conclusion div {
-    font-size: 60%;
+    font-size: 70%;
   }
 }
