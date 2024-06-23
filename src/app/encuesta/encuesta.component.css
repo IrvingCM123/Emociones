@@ -162,6 +162,7 @@
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  color: #0f9285;
 }
 
 .Conclusion span::-webkit-scrollbar {
@@ -203,6 +204,14 @@
     font-size: 70%;
   }
 
+  .Conclusion span {
+    font-size: 70%;
+    margin-top: -30%;
+    color: #0f9285;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .Conclusion span {
     font-size: 70%;
     margin-top: -50%;
